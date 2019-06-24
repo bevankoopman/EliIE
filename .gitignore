@@ -1,1 +1,4 @@
 *.pyc
+__pycache__/
+Tempfile/test_NER.xml
+Tempfile/test_Parsed.xml
