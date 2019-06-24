@@ -1,0 +1,4 @@
+name: EliIE
+dependencies:
+- python=3.7
+- scikit-learn
