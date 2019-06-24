@@ -11,7 +11,8 @@ __author__ = 'Tian Kang'
 #==================================================================#
 import os,codecs,re
 import sys
-from libsvm import svmutil
+sys.path.append('/Users/koo01a/tools/libsvm-3.23/python')
+import svmutil
 from features_dir import relation_features
 from xml.etree import ElementTree as ET
 import sys
@@ -26,7 +27,7 @@ def main():
 
     input_dir=sys.argv[1]+'/'+filename+'_NER.xml'
     output_dir=sys.argv[1]+'/'+filename+'_Parsed.xml'
-    print "Reading NER results from ", input_dir
+    print("Reading NER results from ", input_dir)
 
     tree = ET.ElementTree(file=input_dir)
 
@@ -43,7 +44,7 @@ def main():
                 p_label,p_acc,p_val=svmutil.svm_predict(y,x,m)
             except ValueError:
                 for child2 in child.findall('text'):
-                    print child2.text
+                    print(child2.text)
                 continue
 
         #print len(p_label),len(temp_pairs)
@@ -91,9 +92,9 @@ def main():
     if relation_excuted:
         os.system('rm in.parse')
     os.system('rm Tempfile/relation_scale')
-    print "Writing Relation xml to ", output_dir
+    print("Writing Relation xml to ", output_dir)
     new_tree=codecs.open(output_dir,'w')
     tree.write(new_tree)
-    print "Finished!"
+    print("Finished!")
 
 if __name__ == '__main__': main()

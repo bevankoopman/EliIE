@@ -63,11 +63,14 @@ __Prerequired Installation:__
     Go to `features_dir` and open `metamap_tag.sh`; follow the guidance to change the MetaMap root dir and start running  
 
 2.  Python package required:   
-    **nltk**  
-    **networkx**  
-    **codecs**  
-    [**libsvm**](https://www.csie.ntu.edu.tw/~cjlin/libsvm)   
-    [**practnlptools**](https://pypi.python.org/pypi/practnlptools/1.0)
+    * **nltk**  
+    * **networkx**  
+    * **codecs**  
+    * [**libsvm**](https://www.csie.ntu.edu.tw/~cjlin/libsvm)   
+		* Download and extract the tarball: [http://www.csie.ntu.edu.tw/~cjlin/libsvm+tar.gz](http://www.csie.ntu.edu.tw/~cjlin/libsvm+tar.gz)
+		* Run `make` in `libsvm-3.23/python`.
+	
+    * [**practnlptools**](https://pypi.python.org/pypi/practnlptools/1.0)
 
 3.  [CRF ++](https://taku910.github.io/crfpp/)    
 Easy installation following the instruction: 

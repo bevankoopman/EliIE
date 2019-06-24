@@ -39,7 +39,7 @@ def label_umls_cui(metamap_output,sent):
             if info[1] != 'MM':
                 continue
         except IndexError:
-            print "INDEX ERROR!!!!!!"
+            print("INDEX ERROR!!!!!!")
 
         type=info[5]
         position=info[8]

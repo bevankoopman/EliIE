@@ -207,8 +207,8 @@ def main():
     #===== train =====
     # read file:
 
-    annotation_dir='/Users/tian/Documents/EliIE-master/Tempfile/annotation/train'
-    mytrain=codecs.open('/Users/tian/Documents/EliIE-master/Tempfile/pico_train.conll','w')
+    annotation_dir='Tempfile/annotation/train'
+    mytrain=codecs.open('Tempfile/pico_train.conll','w')
     txt2matrix_fortrain(annotation_dir,mytrain,PICO_lists,'picotrain',curpath)
     print ("matrix_finished!")
 

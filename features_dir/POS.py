@@ -6,7 +6,7 @@ import nltk
 
 
 import string,os
-reload(sys)
+#reload(sys)
 
 
 

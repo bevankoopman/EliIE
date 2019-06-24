@@ -237,10 +237,10 @@ def generate_shortestpath (sent,left_term,left_start,right_term,right_start):
     graph = nx.Graph(edges)
     #print right
     if right not in graph.nodes():
-        print "right",left_term, right_term
+        print("right",left_term, right_term)
         return "right"
     if left not in graph.nodes():
-        print "left", left_term, right_term
+        print("left", left_term, right_term)
         return "left"
     shorttest_path=nx.shortest_path_length(graph, source=left, target=right)
    # print
