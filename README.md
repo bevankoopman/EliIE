@@ -71,6 +71,8 @@ __Prerequired Installation:__
 		* Run `make` in `libsvm-3.23/python`.
 	
     * [**practnlptools**](https://pypi.python.org/pypi/practnlptools/1.0)
+	    * `git clone https://github.com/biplab-iitb/practNLPTools`
+	    * `cd practNLPTools  && sudo python setup.py install `
 
 3.  [CRF ++](https://taku910.github.io/crfpp/)    
 Easy installation following the instruction: 
